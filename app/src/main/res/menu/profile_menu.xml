@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuRefresh"
+        android:icon="@drawable/ic_refresh"
+        android:orderInCategory="99"
+        android:title="REFRESH"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuUpdate"
+        android:icon="@drawable/ic_update"
+        android:orderInCategory="99"
+        android:title="UPDATE"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/ic_logout"
+        android:orderInCategory="99"
+        android:title="LOGOUT"
+        app:showAsAction="always" />
+</menu>

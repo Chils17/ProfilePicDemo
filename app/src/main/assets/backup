@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "447673562458",
+    "project_id": "firebase-election-2017"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447673562458:android:a11cfcad3dd2023a",
+        "android_client_info": {
+          "package_name": "com.elections.gujarat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447673562458-usf6hb62j7jpua94as9bar5n5pirvo7f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "447673562458-2h3g26hsggi3v4m0cb5cdgh3rlk9uucp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elections.gujarat",
+            "certificate_hash": "b8f1b8a84fa6bd9960ddae7672161f13403e0962"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs48YNM7lCxhjXvdf8yqx8zL94YTUbvyY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

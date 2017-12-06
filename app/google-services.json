@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "653369985417",
+    "project_id": "profilepicdemo"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653369985417:android:fef75483f4070b6c",
+        "android_client_info": {
+          "package_name": "com.webmyne.profilepicdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653369985417-97ouj2c62ov56r0kgkrdfvlglkrnqrqr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "653369985417-7s71quf489iver81h11l2k9v89u8viov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webmyne.profilepicdemo",
+            "certificate_hash": "70073cb1107e12b045985f558b2822d5fe07a30e"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDZ2DGgSU1mw_7EbYwP1pMWujAilcUNJU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

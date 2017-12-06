@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ProfilePicDemo</string>
+
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Sign in with Google</string>
+    <string name="check_internet">Please check your internet connection</string>
+    <string name="try_again">Something went wrong please try again later</string>
+
+    <string name="login_required">Login Required</string>
+    <string name="title_share_with_friends">Share with Friends</string>
+    <string name="message_share_friends">Share this app with your friends and get latest news about elections.</string>
+    <string name="login_required_content">Please Login to your account for create your profile.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="logout">Logout</string>
+    <string name="logout_content">Are you sure you want to logout ?</string>
+
+    <string name="enter_mobile_number">Please enter your valid mobile number</string>
+    <string name="enter_fullname">Please enter your full name</string>
+    <string name="yes">YES</string>
+    <string name="profile_update">Profile successfully updated</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.webmyne.profilepicdemo.ui.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_app_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <RelativeLayout
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp">
+
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:transitionName="imgProfile" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <com.webmyne.profilepicdemo.custom.TfEditText
+                    android:id="@+id/edtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_edt"
+                    android:ellipsize="end"
+                    android:hint="Full Name"
+                    android:lines="1"
+                    android:longClickable="false"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+                <com.webmyne.profilepicdemo.custom.TfEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edt"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:hint="Email id"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:longClickable="false"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+                <com.webmyne.profilepicdemo.custom.TfEditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edt"
+                    android:ellipsize="end"
+                    android:hint="Mobile (Optional)"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:longClickable="false"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp" />
+
+                <com.webmyne.profilepicdemo.custom.TfEditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_edt"
+                    android:hint="Area (Optional)"
+                    android:longClickable="false"
+                    android:maxLength="80"
+                    android:paddingLeft="8dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

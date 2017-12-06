@@ -1,0 +1,106 @@
+Remaining:
+
+Tracking ID
+UA-109369078-1
+
+------------------------------------------------------------------------
+    Glide
+
+        Glide.with(context)
+           .load()
+           .asBitmap()
+           .listener(new RequestListener<String, Bitmap>() {
+               @Override
+               public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {
+                   preloader.setVisibility(View.GONE);
+                   return false;
+               }
+
+               @Override
+               public boolean onResourceReady(Bitmap resource, String model, Target<Bitmap> target, boolean isFromMemoryCache, boolean isFirstResource) {
+                   preloader.setVisibility(View.GONE);
+                   return false;
+               }
+           })
+           .into(new BitmapImageViewTarget(imgPerson) {
+                @Override
+                protected void setResource(Bitmap resource) {
+                    RoundedBitmapDrawable circularBitmapDrawable =
+                            RoundedBitmapDrawableFactory.create(context.getResources(), resource);
+                    circularBitmapDrawable.setCircular(true);
+                    imgPerson.setImageDrawable(circularBitmapDrawable);
+                }
+            });
+
+------------------------------------------------------------------------
+    AdView
+
+        <com.google.android.gms.ads.AdView
+          android:id="@+id/adView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          app:adSize="BANNER"
+          app:adUnitId="@string/Banner_Ad_id" />
+
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+        final InterstitialAd interstitialAd = new InterstitialAd(context);
+        interstitialAd.setAdUnitId(context.getString(R.string.Fullpage_Ad_id));
+        AdRequest adRequest = new AdRequest.Builder().build();
+        interstitialAd.loadAd(adRequest);
+        interstitialAd.setAdListener(new AdListener() {
+            @Override
+                public void onAdLoaded() {
+                    interstitialAd.show();
+                }
+             });
+
+------------------------------------------------------------------------
+    Social login credential
+
+        Gmail	    : gujaratelection17@gmail.com       : webmob@2017
+        Facebook	: anddeveloper.webmyne@gmail.com    : admin@net
+        Fabric	    : gujaratelection17@gmail.com       : webmob@2017
+        Branch     : gujaratelection17@gmail.com       : Webmob@2017
+
+---------------------------------------------------------------------------
+
+    Guidelines Content
+        - Who Can Vote in India
+    	http://www.elections.in/who-can-vote-in-india.html
+
+        - Importance of Elections in India
+    	http://www.elections.in/importance-of-elections-in-india.html
+
+        - About Voter ID card
+    	http://www.elections.in/voter-id-card.html
+
+        - Why Should We Vote
+    	http://www.elections.in/why-should-we-vote-in-india.html
+
+        - VPAT | EVM –Information
+    	http://www.thehindu.com/news/national/all-you-need-to-know-about-vvpat/article18077550.ece
+
+        #234f7c title color
+
+---------------------------------------------------------------------------
+    Key store
+
+    alias : electionreleasekey
+    password : election_gujarat
+
+---------------------------------------------------------------------------
+
+Package Name		  Package Description							   Price	Reward Points
+
+Vikas				  Get 5K Point with Vikas Pack					   50		5,000
+Kisan				  Get 10K Point with Kisan Pack					   100		10,000
+Swachh Bharat		  Get 20K Point with Swachh Bharat Pack			   200		20,000
+GST 				  Get 50K Point with GST Pack					   500		50,000
+Mera Bharat			  Get 100K Point with Mera Bharat Pack			   1000	    1,00,000
+Nayi Soch NayiUmmed   Get 500K Point with Nayi Soch Nayi Ummed Pack	   5000	    5,00,000
+Make In India		  Get 1M Point with Nayi Make In India  Pack	   10000	10,00,000

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:title=""
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:theme="@style/AppTheme.AppBarOverlay">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.webmyne.profilepicdemo.custom.TfTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgProfile"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:ftype="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
